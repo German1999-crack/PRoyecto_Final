@@ -9,7 +9,16 @@
 
 
 ![](https://museodelchocolate.com.co/wp-content/uploads/2022/10/historia-del-cafe.jpg)
+##DATOS 
 
+- Se descargó un dataset ya creado llamado CoffeeFinalDataset de 110 imágenes que clasifica los granos según el color como:
+- Rojo
+- Verde
+- Pinton
+- Sobremaduro
+- 66 imágenes para TRAIN (60%)
+- 22 imágenes para VALID (20%)
+- 22 imágenes para TEST (20%)
 
 ####Desarrollo: herramientas utilizadas
 
@@ -21,11 +30,22 @@
 - Roboflow es una plataforma que te ayuda a crear, entrenar, alojar y desplegar modelos de visión por computadora usando varias herramientas de anotación y etiquetado. Se puede usar Roboflow para etiquetar, entrenar y desplegar modelos para diversas industrias y aplicaciones,-
 
 ##pasos 
+
 - Se invoca la biblioteca YOLO 
+
 - Se establece la tarea: detectar
+
+
 -  Se establece el parámetro para modo de entrenar
+
 - El modelo yolov8m.pt preentrenado que se utilizará como punto de partida para el -entrenamiento.
+
 - Se definen el número de épocas (o iteraciones completas a través del conjunto de datos de entrenamiento) que se realizarán durante el entrenamiento.
+
+ - Se establece el modo en el que se ejecutará YOLO, utilizando el modo de validación para evaluar el rendimiento del modelo con el conjunto de datos de validación.
+ 
+- best.pt es el modelo que se ha entrenado previamente y que se va a validar
+-
 
 
 ###GIT
